@@ -13,9 +13,12 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controllers/MainController.js"></script>
+    <!-- Twitch -->
+    <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
     <base href="/">
   </head>
   <body ng-app='twitchDashboardApp'>
+    <h1 class="title">Twitch Dashboard</h1>
     <div class="container fill">
       <section ui-view ng-controller="MainController as main"></section>
     </div>

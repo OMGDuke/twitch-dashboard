@@ -3,5 +3,8 @@ angular.module('twitchDashboardApp')
 
     var self = this;
 
-    self.hello = "Hello"
+  Twitch.init({clientId: 'your client ID here'}, function(error, status) {
+    // the sdk is now loaded
+  });
+
   });
