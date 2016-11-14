@@ -1,10 +1,16 @@
 angular.module('twitchDashboardApp')
-  .controller('MainController', function($state, $scope){
+  .controller('MainController', function($scope, $window){
 
     var self = this;
 
-  Twitch.init({clientId: 'your client ID here'}, function(error, status) {
-    // the sdk is now loaded
-  });
+    self.twitchAuthUrl = "https://api.twitch.tv/kraken/oauth2/authorize" +
+    "?response_type=token" +
+    "&client_id=1234" +
+    "&redirect_uri=http://localhost:8080/oauth_callback" +
+    "&scope=user_read+channel_read";
 
-  });
+
+  self.logThis = function() {
+    console.log(localStorage);
+  }
+});

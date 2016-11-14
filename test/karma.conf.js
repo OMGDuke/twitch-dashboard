@@ -7,6 +7,7 @@ module.exports = function(config){
         'app/bower_components/angular/angular.js',
         'app/bower_components/angular-ui-router/release/angular-ui-router.js',
         'app/bower_components/angular-mocks/angular-mocks.js',
+        'https://ttv-api.s3.amazonaws.com/twitch.min.js',
         'app/js/**/*.js',
         'test/unit/**/*.js'
       ],
