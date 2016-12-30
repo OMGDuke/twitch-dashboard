@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/OMGDuke/twitch-dashboard/issues"
   },
-  "homepage": "https://github.com/OMGDuke/twitch-dashboard#readme"
+  "homepage": "https://github.com/OMGDuke/twitch-dashboard#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.5",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-twitch": "^1.0.3"
+  }
 }
