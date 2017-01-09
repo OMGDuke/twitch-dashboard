@@ -16,7 +16,7 @@ describe("Express Backend", function() {
 
   describe("api", function() {
 
-    var url = "http://localhost:8080/api/auth/twitch";
+    var url = "http://localhost:8080/auth/twitch";
 
     it("returns json", function(done) {
       request(url, function(error, response, body) {

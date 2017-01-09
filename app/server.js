@@ -13,7 +13,7 @@ var session = require('express-session');
 var configDB = require('../app/config/database.js')
 
 mongoose.connect(configDB.url);
-// require('./app/config/passport')(passport);
+require('../app/config/passport')(passport);
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
