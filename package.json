@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./app/server.js",
     "nodemon": "nodemon ./app/server.js",
-    "express-test": "./node_modules/.bin/mocha --reporter spec"
+    "express-test": "./node_modules/.bin/mocha --reporter spec ./test/back/"
   },
   "repository": {
     "type": "git",
