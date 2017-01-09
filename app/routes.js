@@ -6,6 +6,14 @@ module.exports = function(app, passport) {
     failureRedirect: '/'
   }));
 
+  app.get('/authenticateduser', function(req, res) {
+    if(!req.user) {
+      res.send("No Authenticated User")
+    } else {
+      res.json(req.user);
+    }
+  });
+
   // LOG OUT
   app.get('/logout', function(req, res) {
     req.logout();
