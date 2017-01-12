@@ -1,1 +1,5 @@
-<a href="/auth/twitch">Connect via twitch</a>
+<a ng-hide="main.user" href="/auth/twitch">Connect via twitch</a>
+<div ng-show="main.user">
+<h1>Hello {{main.user.username}}</h1>
+<a href="/logout">Logout</a>
+</div>

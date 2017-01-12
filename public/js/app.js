@@ -7,10 +7,10 @@ twitchDashboardApp.config(function($stateProvider, $urlRouterProvider, $location
       url: "/",
       templateUrl: "views/home.html",
       controller: 'MainController'
-    })
+    });
 
     $urlRouterProvider.otherwise('/');
-    if(window.history && window.history.pushState){
-     $locationProvider.html5Mode({enabled: true});
-    }
+    // if(window.history && window.history.pushState){
+    //  $locationProvider.html5Mode({enabled: true});
+    // }
 });

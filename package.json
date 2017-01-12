@@ -2,7 +2,7 @@
   "name": "twitch-dashboard",
   "version": "1.0.0",
   "description": "Display your twitch.tv stats",
-  "main": "app/server.js",
+  "main": "./server.js",
   "scripts": {
     "start": "node ./server.js",
     "nodemon": "nodemon ./server.js",
