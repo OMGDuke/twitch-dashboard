@@ -3,7 +3,7 @@ angular.module('twitchDashboardApp')
 
     var self = this;
 
-    self.user = {};
+    self.user = null;
 
     $http({
       method: 'GET',
@@ -16,8 +16,7 @@ angular.module('twitchDashboardApp')
       }
       console.log(self.user);
     }, function errorCallback(response) {
-      // called asynchronously if an error occurs
-      // or server returns response with an error status.
+      console.log("Error retrieving user: " + response);
     });
 
 });

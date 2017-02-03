@@ -11,7 +11,13 @@
       <base href="/">
   </head>
   <body ng-controller="MainController as main">
-    Welcome to StreamDash!
+    <h1>Welcome to StreamDash!</h1>
+
+    <a ng-hide="main.user" href="/auth/twitch"><img src="/assets/img/twitch-connect.png"></a>
+    <div ng-show="main.user">
+    <h1>Hello {{main.user.username}}</h1>
+    <a href="/logout">Logout</a>
+    </div>
 
     <section ui-view></section>
   </body>

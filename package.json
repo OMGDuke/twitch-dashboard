@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./server.js",
     "nodemon": "nodemon ./server.js",
-    "express-test": "./node_modules/.bin/mocha --reporter spec ./test/back/"
+    "express-test": "./node_modules/.bin/mocha --reporter spec ./test/back/",
+    "webdriver-manager": "./node_modules/protractor/bin/webdriver-manager"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,11 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "jasmine-core": "^2.5.2",
+    "jasmine-spec-reporter": "^3.2.0",
     "karma": "^1.3.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-spec-reporter": "0.0.26",
     "mocha": "^3.2.0",
     "protractor": "^4.0.14",
     "request": "^2.79.0"
